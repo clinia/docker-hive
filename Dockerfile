@@ -1,5 +1,7 @@
 FROM ghcr.io/clinia/hadoop-base:hadoop3.3.3-java8
 
+LABEL org.opencontainers.image.source https://github.com/clinia/docker-hive
+
 # Allow buildtime config of HIVE_VERSION
 ARG HIVE_VERSION
 # Set HIVE_VERSION from arg if provided at build, env if provided at run, or default
