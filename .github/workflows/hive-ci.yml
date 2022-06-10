@@ -18,7 +18,7 @@ jobs:
       - name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=ghcr.io/clinia/hadoop-base
+          DOCKER_IMAGE=ghcr.io/clinia/hive
           HIVE_VERSION=${{ github.event.inputs.hive_version }}
           TAGS="${DOCKER_IMAGE}:${HIVE_VERSION}-postgresql-metastore"
 
